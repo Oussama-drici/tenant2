@@ -42,7 +42,7 @@ spec:
       type: RFC822_ADDR
     controllerIpAddress: 13.38.23.122
     localId:
-      id: cnf-wan-mpls-1-edge1@namla.cloud
+      id: cnf-wan-mpls-1-edge2@namla.cloud
       type: RFC822_ADDR
     authentication:
       type: psk
