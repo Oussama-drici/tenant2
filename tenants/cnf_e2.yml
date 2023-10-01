@@ -5,7 +5,7 @@ metadata:
   name: cnf-wan-mpls-1-edge2
   namespace: namla-system
 spec:
-  address: 10.25.11.242/24
+  address: 10.25.11.81/24
   ifname: ens5
   nodename: edge2
   nvni-name: nvni-2
@@ -19,7 +19,7 @@ metadata:
   name: cnf-lan-lan-2-edge2
   namespace: namla-system
 spec:
-  address: 10.25.22.16/24
+  address: 10.25.22.194/24
   ifname: ens4
   nodename: edge2
   nvni-name: nvni-1
