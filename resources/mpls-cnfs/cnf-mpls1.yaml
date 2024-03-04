@@ -2,12 +2,12 @@
 apiVersion: cnf.namla.com/v1alpha1
 kind: CloudNativeNetworkFunction
 metadata:
-  name: cnf-wan-mpls-1-edge1
+  name: cnf-wan-mpls-1-edgearm1
   namespace: namla-system
 spec:
-  address: 10.25.10.111/24
-  ifname: ens5
-  nodename: edge1
+  address: 10.25.10.228/24
+  ifname: ens7
+  nodename: edgearm1
   nvni-name: nvni-2
   type: WAN
   control-plane:
@@ -16,11 +16,11 @@ spec:
 apiVersion: cnf.namla.com/v1alpha1
 kind: CloudNativeNetworkLinuxRoute
 metadata:
-  name: cnf-route-cnf-wan-mpls-1-edge1-2
+  name: cnf-route-cnf-wan-mpls-1-edgearm1-2
   namespace: namla-system
 spec:
-  nodename: edge1
-  cnf: cnf-wan-mpls-1-edge1
+  nodename: edgearm1
+  cnf: cnf-wan-mpls-1-edgearm1
   config:
     scope: GLOBAL
     dst_network: 10.25.2.0/24
@@ -30,11 +30,11 @@ spec:
 apiVersion: cnf.namla.com/v1alpha1
 kind: CloudNativeNetworkLinuxRoute
 metadata:
-  name: cnf-route-cnf-wan-mpls-1-edge1-13
+  name: cnf-route-cnf-wan-mpls-1-edgearm1-13
   namespace: namla-system
 spec:
-  nodename: edge1
-  cnf: cnf-wan-mpls-1-edge1
+  nodename: edgearm1
+  cnf: cnf-wan-mpls-1-edgearm1
   config:
     scope: GLOBAL
     dst_network: 10.25.13.0/24

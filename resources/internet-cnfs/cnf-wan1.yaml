@@ -1,12 +1,12 @@
 apiVersion: cnf.namla.com/v1alpha1
 kind: CloudNativeNetworkFunction
 metadata:
-  name: cnf-wan-internet-1-edge1
+  name: cnf-wan-internet-1-edgearm1
   namespace: namla-system
 spec:
-  address: 10.25.12.178/24
-  ifname: ens6
-  nodename: edge1
+  address: 10.25.12.138/24
+  ifname: ens8
+  nodename: edgearm1
   nvni-name: nvni-3
   type: WAN
   control-plane:
@@ -15,11 +15,11 @@ spec:
 apiVersion: cnf.namla.com/v1alpha1
 kind: CloudNativeNetworkLinuxRoute
 metadata:
-  name: cnf-default-route-cnf-wan-internet-1-edge1
+  name: cnf-default-route-cnf-wan-internet-1-edgearm1
   namespace: namla-system
 spec:
-  nodename: edge1
-  cnf: cnf-wan-internet-1-edge1
+  nodename: edgearm1
+  cnf: cnf-wan-internet-1-edgearm1
   config:
     scope: GLOBAL
     dst_network: 0.0.0.0/0
