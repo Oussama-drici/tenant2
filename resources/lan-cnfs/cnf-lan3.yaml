@@ -4,7 +4,7 @@ metadata:
   name: cnf-lan-lan-2-edge-amine3
   namespace: namla-system
 spec:
-  address: 172.22.0.13/32
+  address: 172.22.0.13/24
   ifname: ens7
   nodename: edge-amine3
   nvni-name: nvni-3

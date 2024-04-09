@@ -4,7 +4,7 @@ metadata:
   name: cnf-wan-internet-1-edge-4
   namespace: namla-system
 spec:
-  address: 172.20.3.13/32
+  address: 172.20.3.13/24
   ifname: ens5
   nodename: edge-amine4
   nvni-name: nvni-1
