@@ -2,7 +2,7 @@
 apiVersion: cnf.namla.com/v1alpha1
 kind: CloudNativeNetworkFunction
 metadata:
-  name: cnf-wan-mpls-1-edge-amine1
+  name: cnf-wan-mpls-1-edge-oussama1
   namespace: namla-system
 spec:
   address: 192.168.1.18/32/24
