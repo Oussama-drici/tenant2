@@ -1,7 +1,0 @@
-apiVersion: cnf.namla.com/v1alpha1
-kind: CloudNativeNetworkTransportNetwork
-metadata:
-  name: mpls
-  namespace: namla-system
-spec:
-  id: 1
