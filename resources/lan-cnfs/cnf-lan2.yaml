@@ -1,0 +1,14 @@
+apiVersion: cnf.namla.com/v1alpha1
+kind: CloudNativeNetworkFunction
+metadata:
+  name: cnf-lan-lan-2-edge-oussama2
+  namespace: namla-system
+spec:
+  address: 172.22.0.27/24
+  ifname: ens7
+  nodename: edge-oussama2
+  nvni-name: nvni-3
+  type: LAN
+  #stn: true
+  control-plane:
+    bgp-as: 64515
