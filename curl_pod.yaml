@@ -20,6 +20,7 @@ spec:
     resources: {}
     securityContext: 
       privileged: true
+    command: ["/bin/bash", "-c", "while true; do sleep 3600; done;"]
     #resources:
           #limits:
             #memory: "1Gi"  # Example memory limit
