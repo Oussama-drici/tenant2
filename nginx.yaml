@@ -6,6 +6,9 @@ metadata:
     run: server
   name: vpp-server
 spec:
+  securityContext:
+    runAsUser: 0
+    runAsGroup: 0
   volumes:
   - hostPath:
       path: /tmp/memif
