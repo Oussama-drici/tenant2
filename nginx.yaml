@@ -12,7 +12,8 @@ spec:
       type: ""
     name: memif-sockets
   containers:
-  - image: ligato/vpp-agent
+  - image: ubuntu:22.04
+    command: ["/bin/bash", "-c", "while true; sleep 3600; done;"]
     name: server-vpp
     resources: {}
     volumeMounts:
