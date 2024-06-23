@@ -20,13 +20,13 @@ spec:
     resources: {}
     securityContext: 
       privileged: true
-    #resources:
-          #limits:
-            #memory: "1Gi"  # Example memory limit
-            #hugepages-2Mi: "1Gi" 
+    resources:
+          limits:
+            memory: "100Mi"  # Example memory limit
+            hugepages-2Mi: "100Mi" 
             #cpu: "1"       # Example CPU limit
-          #requests:
-            #memory: "1Gi"  # Example memory request
+          requests:
+            memory: "100Mi"  # Example memory request
             #hugepages-2Mi: "1Gi" 
             #cpu: "1"       # Example CPU request
     volumeMounts:
