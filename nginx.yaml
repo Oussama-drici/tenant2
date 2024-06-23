@@ -13,6 +13,7 @@ spec:
     name: memif-sockets
   containers:
   - image: ligato/vpp-base:latest
+    command: ["/bin/bash", "-c", "vppctl"]
     name: server-vpp
     resources: {}
     volumeMounts:
