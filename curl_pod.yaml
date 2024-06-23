@@ -27,7 +27,7 @@ spec:
             cpu: "1"       # Example CPU limit
           requests:
             #memory: "1Gi"  # Example memory request
-            hugepages-2Mi: "512Mi" 
+            hugepages-2Mi: "1Gi" 
             cpu: "1"       # Example CPU request
     volumeMounts:
     - mountPath: /tmp
