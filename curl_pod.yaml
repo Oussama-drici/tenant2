@@ -15,7 +15,7 @@ spec:
       type: ""
     name: memif-sockets
   containers:
-  - image: namla/vpp-agent:v1.0-amd64
+  - image: ubuntu:22.04
     name: client-vpp
     resources: {}
     securityContext: 
