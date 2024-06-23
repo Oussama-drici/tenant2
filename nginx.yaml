@@ -22,11 +22,11 @@ spec:
       privileged: true
     resources:
           limits:
-            memory: "100Mi"  # Example memory limit
-            hugepages-2Mi: "100Mi" 
+            memory: "50Mi"  # Example memory limit
+            hugepages-2Mi: "50Mi" 
             #cpu: "1"       # Example CPU limit
           requests:
-            memory: "100Mi"  # Example memory request
+            memory: "50Mi"  # Example memory request
             #hugepages-2Mi: "1Gi" 
             #cpu: "1"       # Example CPU request
     name: server-vpp
