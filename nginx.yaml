@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     run: server
-  name: server
+  name: vpp-server
 spec:
   volumes:
   - hostPath:
@@ -12,7 +12,7 @@ spec:
       type: ""
     name: memif-sockets
   containers:
-  - image: ligato/vpp-base:latest
+  - image: ligato/vpp-agent
     name: server-vpp
     resources: {}
     volumeMounts:
