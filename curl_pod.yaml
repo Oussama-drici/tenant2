@@ -9,7 +9,6 @@ spec:
   securityContext:
     runAsUser: 0
     runAsGroup: 0
-    privileged: true
   volumes:
   - hostPath:
       path: /tmp/memif
@@ -20,6 +19,8 @@ spec:
     command: ["/bin/bash", "-c", "while true; do sleep 3600; done;"]
     name: client-vpp
     resources: {}
+    securityContext: 
+      privileged: true
     volumeMounts:
     - mountPath: /tmp
       name: memif-sockets
