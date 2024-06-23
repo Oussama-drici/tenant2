@@ -15,8 +15,20 @@ spec:
       type: ""
     name: memif-sockets
   containers:
-  - image: ubuntu:22.04
-    command: ["/bin/bash", "-c", "while true; do sleep 3600; done;"]
+  - image: ligato/vpp-base
+    name: client-vpp
+    resources: {}
+    securityContext: 
+      privileged: true
+    resources:
+          limits:
+            memory: "100Mi"  # Example memory limit
+            hugepages-2Mi: "100Mi" 
+            #cpu: "1"       # Example CPU limit
+          requests:
+            memory: "100Mi"  # Example memory request
+            #hugepages-2Mi: "1Gi" 
+            #cpu: "1"       # Example CPU request
     name: server-vpp
     resources: {}
     volumeMounts:
