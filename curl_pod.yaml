@@ -22,10 +22,10 @@ spec:
       privileged: true
     resources:
           limits:
-            memory: "4Gi"  # Example memory limit
-            cpu: "2"       # Example CPU limit
+            memory: "1Gi"  # Example memory limit
+            cpu: "1"       # Example CPU limit
           requests:
-            memory: "2Gi"  # Example memory request
+            memory: "1Gi"  # Example memory request
             cpu: "1"       # Example CPU request
     volumeMounts:
     - mountPath: /tmp
