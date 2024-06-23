@@ -6,11 +6,18 @@ metadata:
     run: ubuntu
   name: ubuntu
 spec:
+  volumes:
+  - hostPath:
+      path: /tmp/memif
+      type: ""
+    name: memif-sockets
   containers:
-  - image: ubuntu:22.04
-    name: ubuntu
-    command: ["/bin/bash", "-c", "echo Hello from Ubuntu pod; while true; do sleep 3600; done;"]
+  - image: ligato/vpp-base:latest
+    name: client1
     resources: {}
+    volumeMounts:
+    - mountPath: /tmp
+      name: memif-sockets
   dnsPolicy: ClusterFirst
   restartPolicy: Always
   nodeName: edge-oussama2
