@@ -3,13 +3,21 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: nginx
-  name: nginx
+    run: server
+  name: server
 spec:
+  volumes:
+  - hostPath:
+      path: /tmp/memif
+      type: ""
+    name: memif-sockets
   containers:
-  - image: nginx
-    name: nginx
+  - image: ligato/vpp-base:latest
+    name: server-vpp
     resources: {}
+    volumeMounts:
+    - mountPath: /tmp
+      name: memif-sockets
   dnsPolicy: ClusterFirst
   restartPolicy: Always
   nodeName: edge-oussama1
