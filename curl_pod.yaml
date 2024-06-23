@@ -9,6 +9,8 @@ spec:
   containers:
   - image: ubuntu:22.04
     name: ubuntu
+    command: 
+    - "/bin/bash"
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
