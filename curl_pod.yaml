@@ -20,6 +20,13 @@ spec:
     resources: {}
     securityContext: 
       privileged: true
+    resources:
+          limits:
+            memory: "4Gi"  # Example memory limit
+            cpu: "2"       # Example CPU limit
+          requests:
+            memory: "2Gi"  # Example memory request
+            cpu: "1"       # Example CPU request
     volumeMounts:
     - mountPath: /tmp
       name: memif-sockets
