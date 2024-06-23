@@ -16,7 +16,6 @@ spec:
     name: memif-sockets
   containers:
   - image: namla/vpp-agent:v1.0-amd64
-    command: ["/bin/bash", "-c", "while true; do sleep 3600; done;"]
     name: client-vpp
     resources: {}
     securityContext: 
