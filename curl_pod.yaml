@@ -15,7 +15,7 @@ spec:
       type: ""
     name: memif-sockets
   containers:
-  - image: ligato/vpp-base
+  - image: ligato/vpp-agent
     command: ["/bin/bash", "-c", "while true; do sleep 3600; done;"]
     name: client-vpp
     resources: {}
