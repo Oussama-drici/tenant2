@@ -5,8 +5,8 @@ metadata:
   labels:
     run: nginx
   name: nginx
-  namespace: namla-system
 spec:
+  nodeName: edge-oussama1
   containers:
   - image: nginx
     name: nginx
