@@ -3,13 +3,15 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: nginx
-  name: nginx
+    run: pod
+  name: pod
 spec:
   nodeName: edge-oussama1
   containers:
-  - image: nginx
-    name: nginx
+  - args:
+    - busybox
+    image: busybox
+    name: pod
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
