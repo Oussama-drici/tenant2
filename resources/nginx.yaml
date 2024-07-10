@@ -3,17 +3,13 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: busybox
-  name: busybox
+    run: nginx
+  name: nginx
 spec:
   nodeName: edge-oussama1
   containers:
-  - image: busybox
-    name: busybox
-    command: 
-    - "sh"
-    - "-c"
-    - "while true; do sleep 3600; done"
+  - image: nginx
+    name: nginx
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
