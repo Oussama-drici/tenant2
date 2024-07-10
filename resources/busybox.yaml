@@ -3,8 +3,8 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: pod
-  name: pod
+    run: client 
+  name: client
 spec:
   nodeName: edge-oussama1
   containers:
@@ -12,6 +12,10 @@ spec:
     - busybox
     image: busybox
     name: pod
+    command: 
+    - "sh"
+    - "-c"
+    - "while true; do sleep 3600; done"
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
