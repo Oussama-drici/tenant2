@@ -4,9 +4,9 @@ metadata:
   name: cnf-wan-mpls-1-edge-oussama2
   namespace: namla-system
 spec:
-  address: 192.168.1.17/24        
+  address: 192.168.1.21/24        
   ifname: ens6
-  nodename: edge-oussama2
+  nodename: oussama-edge2
   nvni-name: nvni-2
   transport_network: mpls
   type: WAN
