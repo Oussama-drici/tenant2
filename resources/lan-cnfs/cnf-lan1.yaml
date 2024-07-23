@@ -4,9 +4,9 @@ metadata:
   name: cnf-lan-lan-2-edge-oussama1
   namespace: namla-system
 spec:
-  address: 172.22.0.28/24
+  address: 172.22.0.34/24
   ifname: ens7
-  nodename: edge-oussama1
+  nodename: oussama-edge1
   nvni-name: nvni-3
   type: LAN
   #stn: true
