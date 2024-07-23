@@ -6,7 +6,7 @@ metadata:
 spec:
   address: 172.20.0.228/24
   ifname: ens5
-  nodename: oussama-edge2
+  nodename: edge-oussama2
   transport_network: internet
   nvni-name: nvni-1
   type: WAN

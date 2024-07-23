@@ -6,7 +6,7 @@ metadata:
 spec:
   address: 172.22.0.30/24
   ifname: ens7
-  nodename: oussama-edge1
+  nodename: edge-oussama1
   nvni-name: nvni-3
   type: LAN
   #stn: true
