@@ -1,0 +1,22 @@
+apiVersion: cnf.namla.com/v1alpha1
+kind: CloudNativeNetworkControllerVpnProfile
+metadata:
+  name: cnf-vpn-profile-cnf-lan-lan-2-edge11
+  namespace: namla-system
+spec:
+  nodename: edge1
+  cnf: cnf-lan-lan-2-edge1
+  config:
+    controllerId:
+      id: controllercnf@namla.cloud
+      type: RFC822_ADDR
+    controllerIpAddress: 35.247.32.181
+    transportNetwork: internet
+    mgmtType: SINGLE
+    localId:
+      id: cnf-lan-lan-2-edge11@namla.cloud
+      type: RFC822_ADDR
+    authentication:
+      type: psk
+      name: controller1-cnf
+      key: password
