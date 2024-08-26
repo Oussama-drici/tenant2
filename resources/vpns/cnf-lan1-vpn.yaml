@@ -20,3 +20,6 @@ spec:
       type: psk
       name: controller1-cnf
       key: password
+    managedTransportNetworks: 
+    - internet
+    - mpls
