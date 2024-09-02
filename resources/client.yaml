@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: client
+  name: client
+  namespace: test1
+spec:
+  nodeName: edge-oussama1
+  containers:
+  - image: ubuntu
+    name: client
+    resources: {}
+    securityContext:
+      privileged: true
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
