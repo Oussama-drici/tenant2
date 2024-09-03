@@ -5,7 +5,7 @@ metadata:
 spec:
   nodeName: edge-oussama1
   containers:
-  - image: centos8 
+  - image: centos:centos8
     name: centos 
     command:
     - "sh"
