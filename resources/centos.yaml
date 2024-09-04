@@ -13,6 +13,4 @@ spec:
     - "while true; do sleep 3600; done"
     securityContext:
             privileged: true
-            capabilities:
-              add: ["NET_ADMIN"]
   restartPolicy: Always
