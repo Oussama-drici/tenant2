@@ -20,6 +20,6 @@ spec:
       type: psk
       name: controller1-cnf
       key: password
-    managedTransportNetworks: 
-    - internet
-    - mpls
+    outGoingCnfs: 
+    - cnf-wan-internet-1-edge-oussama1
+    - cnf-wan-mpls-1-edge-oussama1

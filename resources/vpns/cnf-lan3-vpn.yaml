@@ -1,11 +1,11 @@
 apiVersion: cnf.namla.com/v1alpha1
 kind: CloudNativeNetworkControllerVpnProfile
 metadata:
-  name: cnf-vpn-profile-cnf-lan-lan-2-edge-oussama2
+  name: cnf-vpn-profile-cnf-lan-lan-2-edge-oussama3
   namespace: namla-system
 spec:
-  nodename: edge-oussama2
-  cnf: cnf-lan-lan-2-edge-oussama2
+  nodename: edge-oussama3
+  cnf: cnf-lan-lan-2-edge-oussama3
   config:
     controllerId:
       id: controllercnf@namla.cloud
@@ -14,12 +14,12 @@ spec:
     transportNetwork: internet
     mgmtType: SINGLE
     localId:
-      id: lan-edge-oussama2@namla.cloud
+      id: lan-edge-oussama3@namla.cloud
       type: RFC822_ADDR
     authentication:
       type: psk
       name: controller1-cnf
       key: password
-    managedTransportNetworks: 
-    - internet
-    - mpls
+    outGoingCnfs: 
+    - cnf-wan-internet-1-edge-oussama3
+    - cnf-wan-mpls-1-edge-oussama3
