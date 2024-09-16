@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: client
 spec:
-  nodeName: edge-oussama1
+  nodeName: edge-amine1
   containers:
   - image: centos:centos8
     name: centos 
